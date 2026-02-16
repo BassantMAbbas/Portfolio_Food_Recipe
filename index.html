@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recipe Website</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pastel-purple sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><i class="fas fa-utensils me-2"></i>Food Recipe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item" href="#" data-query="pizza">Pizza</a></li>
+                <li><a class="dropdown-item" href="#" data-query="carrot">Carrot</a></li>
+                <li><a class="dropdown-item" href="#" data-query="corn">Corn</a></li>
+                <li><a class="dropdown-item" href="#" data-query="mushrooms">Mushrooms</a></li>
+                <li><a class="dropdown-item" href="#" data-query="chicken">Chicken</a></li>
+                <li><a class="dropdown-item" href="#" data-query="pasta">Pasta</a></li>
+                <li><a class="dropdown-item" href="#" data-query="salad">Salad</a></li>
+                <li><a class="dropdown-item" href="#" data-query="beef">Beef</a></li>
+                <li><a class="dropdown-item" href="#" data-query="fish">Fish</a></li>
+                <li><a class="dropdown-item" href="#" data-query="strawberry">Strawberry</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start hero section -->
+    <section class="hero bg-image text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Discover Delicious Recipes</h1>
+        <p class="lead">Explore a world of flavors with our curated recipe collection.</p>
+      </div>
+    </section>
+    <!-- end hero section -->
+    <!-- start section of cards -->
+    <section id="x" class="py-5">
+      <div class="container">
+        <div class="row" id="rowBody">
+          <!-- Cards will be populated here -->
+        </div>
+      </div>
+    </section>
+    <!-- end section of cards -->
+    <!-- start recipe details -->
+    <section id="recipe-details" class="py-5 d-none">
+      <div class="container">
+        <div class="card shadow">
+          <div class="card-body">
+            <button id="back-btn" class="btn btn-pastel-purple mb-3"><i class="fas fa-arrow-left me-2"></i>Back to Recipes</button>
+            <div id="recipe-content">
+            <!-- Recipe details will appear here -->
+             </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!-- end recipe details -->
+    <!-- start loader -->
+    <div id="loading" class="d-none">
+      <div class="overlay"></div>
+      <span class="loader"></span>
+    </div>
+    <!-- end loader -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

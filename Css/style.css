@@ -1,0 +1,171 @@
+/* Pastel purple theme */
+.bg-pastel-purple {
+  background-color: #d4bfff !important; /* Soft pastel purple */
+}
+
+.btn-pastel-purple {
+  background-color: #d4bfff;
+  border-color: #d4bfff;
+  color: #333;
+}
+
+.btn-pastel-purple:hover {
+  background-color: #c4a7ff;
+  border-color: #c4a7ff;
+}
+
+/* Hero section with pastel purple overlay */
+.hero {
+  background: url('https://via.placeholder.com/1920x600?text=Food+Background') no-repeat center center;
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 191, 255, 0.7); /* Pastel purple overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Loader overlay */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 191, 255, 0.8); /* Pastel purple overlay */
+}
+
+.loader {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 140px;
+  background-image: linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0),
+    linear-gradient(#fff 20px, transparent 0);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: 0 0, 40px 0, 80px 0, 120px 0;
+  animation: pgfill 1s linear infinite;
+  z-index: 10000;
+}
+
+@keyframes pgfill {
+  0% {
+    background-image: linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  25% {
+    background-image: linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  50% {
+    background-image: linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  75% {
+    background-image: linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#fff 20px, transparent 0);
+  }
+  100% {
+    background-image: linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0),
+      linear-gradient(#d4bfff 20px, transparent 0);
+  }
+}
+
+/* Card styling with pastel purple */
+.recipe-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid #d4bfff; /* Pastel purple border */
+  border-radius: 15px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in;
+  background-color: #f8f4ff; /* Light pastel background */
+}
+
+.recipe-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(212, 191, 255, 0.5);
+}
+
+.recipe-card img {
+  width: 100%; /* Full width of card */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Crop and center images to fit without distortion */
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+.recipe-card .btn {
+  background-color: #d4bfff;
+  border-color: #d4bfff;
+  color: #333;
+}
+
+.recipe-card .btn:hover {
+  background-color: #c4a7ff;
+  border-color: #c4a7ff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Error styling */
+.error {
+  color: #8a2be2; /* Darker purple for errors */
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .navbar-nav { text-align: center; }
+  .recipe-card img {
+    height: 150px; /* Smaller height on mobile for better fit */
+  }
+}
