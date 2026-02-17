@@ -1,3 +1,37 @@
+Food Recipe Web Application
+
+A responsive recipe browsing web application that allows users to explore different meals by category and view full recipe details dynamically using the Forkify API.
+
+Features:
+
+Fetches recipe data from an external REST API, 
+Category-based filtering (Pizza, Chicken, Pasta, Salad, etc.), 
+Dynamic recipe cards generated with JavaScript, 
+Detailed recipe view with ingredients list, 
+Loading animation while fetching data, 
+Error handling for empty results, 
+Smooth UI transitions between list and details view, 
+Fully responsive design using Bootstrap, 
+Custom pastel purple theme.
+
+Technologies Used:
+
+HTML5, 
+CSS3, 
+Bootstrap 5, 
+JavaScript (ES6+), 
+Fetch API, 
+Async/Await.
+
+What I Practiced:
+
+Working with public APIs, 
+DOM manipulation, 
+Event handling, 
+Conditional rendering, 
+State switching between views,
+UI/UX improvements with loaders and animations.
+
 <img width="1899" height="1037" alt="Screenshot 2026-02-16 162449" src="https://github.com/user-attachments/assets/19ef1ce3-cd47-4ea7-9ebd-3b008da1751e" />
 
 
